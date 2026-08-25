@@ -67,6 +67,7 @@ function SeoHeader() {
       <meta property="og:title" content={seo?.og?.title} />
       <meta property="og:type" content={seo?.og?.type} />
       <meta property="og:url" content={seo?.og?.url} />
+      <meta property="og:image" content={seo?.og?.image} />
       <script type="application/ld+json">{JSON.stringify(data)}</script>
     </Helmet>
   );

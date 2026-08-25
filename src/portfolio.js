@@ -15,7 +15,8 @@ const seo = {
   og: {
     title: "Sainik Khaddar Portfolio",
     type: "website",
-    //url: "http://ashutoshhathidara.com/",
+    url: "https://sainikkhaddar.space/",
+    image: "https://sainikkhaddar.space/social-preview.png",
   },
 };
 
