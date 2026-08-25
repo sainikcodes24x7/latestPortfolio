@@ -2,9 +2,9 @@
   "private": true,
   "name": "masterPortfolio",
   "version": "0.1.0",
-  "homepage": "https://sainikcodes24x7.github.io/",
+  "homepage": "https://sainikkhaddar.space",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
