@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0b125d33753da8425f71134db84ea45",
+    "revision": "7abd0eb65ba74efec1ac008d4c924f39",
     "url": "/index.html"
   },
   {
-    "revision": "6682fe0fa706023467ba",
-    "url": "/static/css/main.f715a50c.chunk.css"
+    "revision": "bcf14c4e8ab768834089",
+    "url": "/static/css/main.bc38586f.chunk.css"
   },
   {
-    "revision": "9ea16a49509265486109",
-    "url": "/static/js/2.745a7669.chunk.js"
+    "revision": "ed183475bdc464a5fd4f",
+    "url": "/static/js/2.96144ee0.chunk.js"
   },
   {
-    "revision": "6682fe0fa706023467ba",
-    "url": "/static/js/main.d2ac3763.chunk.js"
+    "revision": "bcf14c4e8ab768834089",
+    "url": "/static/js/main.251a0f76.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -56,12 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Montserrat-Regular.ee653992.ttf"
   },
   {
-    "revision": "2594324db5f688ad1e69473811ab4c86",
-    "url": "/static/media/Sainik_Khaddar_Resume.2594324d.pdf"
+    "revision": "a6dea1bd9dce7f7412edbda1038ee79a",
+    "url": "/static/media/Sainik_Khaddar_Resume.a6dea1bd.pdf"
   },
   {
     "revision": "16559172ca1d4d552390b48f19e102ba",
     "url": "/static/media/address_image.16559172.svg"
+  },
+  {
+    "revision": "6c2684b8e214f348cca8e138abfd0e30",
+    "url": "/static/media/amazon.6c2684b8.svg"
   },
   {
     "revision": "eaf02c2d0158b6b4b8c2a0a0cf830a04",
