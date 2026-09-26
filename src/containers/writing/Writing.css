@@ -1,0 +1,164 @@
+.writing-section {
+  padding: 90px 5vw;
+  background: #1c1c1b;
+  border-top: 1px solid #35312c;
+  scroll-margin-top: 24px;
+}
+.writing-shell {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.writing-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  color: #ff865c;
+  font: 14px/1.5 "Courier New", monospace;
+}
+.writing-path span {
+  color: #a5a19a;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.writing-heading h2 {
+  margin: 18px 0 14px;
+  color: #f3f1ed;
+  font: clamp(34px, 4vw, 58px) / 1.1 "Google Sans Bold", sans-serif;
+  letter-spacing: -0.04em;
+}
+.writing-heading h2 span {
+  color: #ff5a2f;
+}
+.writing-heading > p {
+  color: #b4b0a9;
+  font: 17px/1.7 "Google Sans Regular", sans-serif;
+  margin-bottom: 36px;
+}
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.writing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #403a32;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #232321, #171818);
+}
+.writing-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.writing-card-top > span {
+  color: #ff865c;
+  font: 30px "Courier New", monospace;
+}
+.writing-card-top small {
+  color: #aaa49c;
+  font: 11px "Courier New", monospace;
+  letter-spacing: 1px;
+}
+.writing-card h3 {
+  margin: 28px 0 12px;
+  color: #f3f1ed;
+  font: 24px/1.25 "Google Sans Bold", sans-serif;
+}
+.writing-card p {
+  color: #b4b0a9;
+  font: 15px/1.8 "Google Sans Regular", sans-serif;
+  margin: 0 0 24px;
+}
+.writing-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.writing-topics span {
+  padding: 6px 9px;
+  border: 1px solid #3b4148;
+  border-radius: 4px;
+  color: #b4c8e0;
+  font: 11px/1.4 "Courier New", monospace;
+}
+.writing-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #393632;
+  color: #c7b08d;
+  font: 12px/1.5 "Courier New", monospace;
+}
+.writing-status > span {
+  color: #ffb454;
+}
+.writing-footnote {
+  margin: 24px 0 0;
+  color: #a5a19a;
+  font: 12px/1.6 "Courier New", monospace;
+}
+.writing-posts {
+  padding: 0;
+  margin: auto 0 0;
+  list-style: none;
+}
+.writing-posts li {
+  border-top: 1px solid #393632;
+  padding-top: 18px;
+}
+.writing-posts a {
+  color: #ffad85;
+  font-size: 17px;
+  text-decoration: none;
+}
+.writing-posts a:hover {
+  text-decoration: underline;
+}
+.writing-posts a:focus-visible {
+  outline: 2px solid #ffad85;
+  outline-offset: 5px;
+}
+.writing-posts p {
+  margin-top: 10px;
+}
+@media (max-width: 900px) {
+  .writing-grid {
+    grid-template-columns: 1fr;
+  }
+  .writing-card {
+    padding: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .writing-section {
+    padding: 60px 24px;
+  }
+}
+.writing-coming-soon {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+}
+.writing-coming-soon p {
+  color: #b4b0a9;
+  font: 16px/1.5 "Courier New", monospace;
+}
+.writing-coming-soon h1 {
+  margin: 12px 0;
+  color: #f3f1ed;
+  font: clamp(40px, 7vw, 80px) / 1.15 "Google Sans Bold", sans-serif;
+}
+.writing-coming-soon h1 span {
+  color: #ff5a2f;
+}

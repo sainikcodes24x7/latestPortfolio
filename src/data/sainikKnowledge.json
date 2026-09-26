@@ -42,11 +42,43 @@
   ],
   "experience": [
     {
+      "id": "amazon",
+      "role": "Software Developer - 1",
+      "company": "Amazon",
+      "team": "International Translation Services",
+      "period": "September 2026 - Present",
+      "engagements": [
+        {
+          "id": "amazon-0",
+          "title": "Runtime Delivery & Scale",
+          "details": "Working in Amazon International Translation Services, owning runtime string-delivery solutions across Amazon. Developing and enhancing Java Spring Boot microservices for multilingual enterprise applications used by global teams, including three Tier-1 services: LMS, Transcord, and DPLS.",
+          "metrics": [
+            ">1M TPS",
+            "p50 latency <10 ms",
+            ">99.999% availability"
+          ]
+        },
+        {
+          "id": "amazon-1",
+          "title": "API Design, Testing & Production Reliability",
+          "details": "Designing and maintaining scalable, reliable REST APIs; testing and validating APIs with Postman after feature releases and bug fixes; and verifying service functionality after deployments. Improving stability through monitoring, regression prevention, and production issue resolution using logs, SQL, and root cause analysis.",
+          "metrics": []
+        },
+        {
+          "id": "amazon-2",
+          "title": "Cross-Functional Delivery & Operations",
+          "details": "Collaborating with Engineering, QA, Product, and DevOps across architecture discussions, implementation, testing, and production deployments. Using AWS, Linux, CI/CD pipelines, and monitoring tools to maintain stable, highly available services.",
+          "metrics": []
+        }
+      ],
+      "location": "Hyderabad, Telangana"
+    },
+    {
       "id": "pwc",
       "role": "Lead Software Engineer (Associate)",
       "company": "PwC India",
       "location": "Kolkata, India",
-      "period": "May 2024 - Present",
+      "period": "May 2024 - September 2026",
       "engagements": [
         {
           "id": "b2b-platform",
@@ -355,6 +387,20 @@
   "lastReviewed": "2026-08-24",
   "offlineAnswers": [
     {
+      "id": "amazon-current-role",
+      "keywords": [
+        "amazon",
+        "current role",
+        "current company",
+        "currently working",
+        "where does sainik work",
+        "spring boot",
+        "spring mvc",
+        "java"
+      ],
+      "answer": "Sainik is Software Developer - 1 at Amazon in Hyderabad, working in International Translation Services since September 2026. He develops Java Spring Boot microservices for Tier-1 runtime string-delivery services LMS, Transcord, and DPLS, delivering over 1M TPS with p50 latency below 10 ms and availability above 99.999%. His work covers REST APIs, Postman validation, production reliability, and cross-functional delivery using AWS, Linux, SQL, and CI/CD. Previously, he worked at PwC India from May 2024 to September 2026."
+    },
+    {
       "id": "service-bus",
       "keywords": [
         "service bus",
@@ -513,7 +559,7 @@
         "work experience",
         "professional experience"
       ],
-      "answer": "Sainik is a Lead Software Engineer (Associate) at PwC India, where he works on B2B and D2C commerce platforms and pharmaceutical enterprise integrations. His scope covers .NET microservices, React/TypeScript operations tooling, Azure Functions and Service Bus, payments, search and caching, databases, CI/CD, and production observability."
+      "answer": "Sainik worked as a Lead Software Engineer (Associate) at PwC India from May 2024 to September 2026, where he worked on B2B and D2C commerce platforms and pharmaceutical enterprise integrations. His scope covers .NET microservices, React/TypeScript operations tooling, Azure Functions and Service Bus, payments, search and caching, databases, CI/CD, and production observability."
     },
     {
       "id": "bespoke-experience",
@@ -592,7 +638,7 @@
     "headline": "Software Engineer",
     "specialization": "Backend software engineering and cloud-native applications",
     "yearsOfExperience": "2.5+ years",
-    "summary": "Software Engineer with 2.5+ years of experience designing, developing, and deploying scalable backend systems and cloud-native applications using C#/.NET, ASP.NET Core, TypeScript, and React. Experienced in microservices, REST APIs, event-driven platforms, enterprise integrations, relational data, CI/CD, containerized delivery, observability, and measurable product growth.",
+    "summary": "Software Developer - 1 at Amazon International Translation Services, building Java Spring Boot microservices and runtime string-delivery solutions on AWS. Software Engineer with 2.5+ years of experience designing, developing, and deploying scalable backend systems and cloud-native applications using C#/.NET, ASP.NET Core, TypeScript, and React. Experienced in microservices, REST APIs, event-driven platforms, enterprise integrations, relational data, CI/CD, containerized delivery, observability, and measurable product growth.",
     "availability": "Open to remote opportunities and willing to relocate",
     "contact": {
       "email": "sainikwarror132@gmail.com",
@@ -645,16 +691,25 @@
       "id": "portfolio-existing",
       "label": "Existing portfolio content approved by Sainik",
       "type": "portfolio"
+    },
+    {
+      "id": "resume-2026-09",
+      "label": "Sainik_Khaddar_Resume.pdf",
+      "type": "resume",
+      "pages": 1
     }
   ],
   "technicalSkills": {
     "languages": [
+      "Java",
       "C#/.NET",
       "TypeScript",
       "JavaScript (ES6+)",
       "SQL"
     ],
     "frameworksAndLibraries": [
+      "Spring Boot",
+      "Spring MVC",
       "ASP.NET Core",
       ".NET 6/8",
       "Entity Framework Core",
@@ -665,7 +720,9 @@
       "Redux Toolkit",
       "TanStack React Query",
       "MUI",
-      "MUI X DataGrid"
+      "MUI X DataGrid",
+      "Spring Framework",
+      "Hibernate"
     ],
     "architecture": [
       "Microservices",
@@ -697,7 +754,9 @@
       "Helm",
       "Prometheus",
       "Grafana",
-      "AWS"
+      "AWS",
+      "AWS Lambda",
+      "Linux"
     ],
     "ciCdAndAutomation": [
       "Azure Pipelines YAML",
@@ -714,7 +773,9 @@
       "Redis IDistributedCache",
       "Query optimization",
       "Indexing",
-      "Caching strategies"
+      "Caching strategies",
+      "Oracle SQL",
+      "DynamoDB"
     ],
     "integrationsAndSecurity": [
       "OAuth 2.0",
@@ -742,6 +803,11 @@
       "CI/CD",
       "TDD",
       "SDLC"
+    ],
+    "aiAndModernTechnologies": [
+      "AI-assisted Development",
+      "Prompt Engineering",
+      "MCP Server"
     ]
   }
 }

@@ -81,7 +81,9 @@ export default function About() {
                 <p>
                   Software Engineer with 2.5+ years of experience building
                   scalable backend systems and cloud-native applications in
-                  C#/.NET, ASP.NET Core, TypeScript, and React.
+                  Java, Spring Boot, AWS, C#/.NET, TypeScript, and React.
+                  Currently working in Amazon International Translation
+                  Services.
                 </p>
 
                 <div className="console-command">

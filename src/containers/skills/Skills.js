@@ -2,6 +2,44 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Skills.css";
 
 const skillNodes = [
+  {
+    name: "AI-assisted Development",
+    icon: "mdi:robot-outline",
+    lon: 45,
+    lat: 72,
+    color: "#ff865c",
+  },
+  {
+    name: "Prompt Engineering",
+    icon: "mdi:message-text-outline",
+    lon: -45,
+    lat: -72,
+    color: "#ff865c",
+  },
+  {
+    name: "MCP Server",
+    icon: "mdi:server-network",
+    lon: 175,
+    lat: 65,
+    color: "#ff865c",
+  },
+  { name: "Java", icon: "logos:java", lon: -30, lat: 30 },
+  {
+    name: "Spring Boot",
+    icon: "simple-icons:springboot",
+    lon: 170,
+    lat: -45,
+    color: "#6DB33F",
+  },
+  {
+    name: "Spring MVC",
+    icon: "simple-icons:spring",
+    lon: -170,
+    lat: -60,
+    color: "#6DB33F",
+  },
+  { name: "AWS", icon: "logos:aws", lon: 20, lat: -25 },
+  { name: "AWS Lambda", icon: "logos:aws-lambda", lon: -90, lat: 65 },
   { name: "C#", icon: "devicon:csharp", lon: 0, lat: 62, size: "large" },
   {
     name: ".NET 8",
@@ -85,14 +123,23 @@ const skillNodes = [
 
 const skillCategories = [
   {
+    name: "AI & Modern Technologies",
+    icon: "✦",
+    skills: ["AI-assisted Development", "Prompt Engineering", "MCP Server"],
+  },
+  {
     name: "Languages",
     icon: "</>",
-    skills: ["C# / .NET", "TypeScript", "JavaScript (ES6+)", "SQL"],
+    skills: ["Java", "C# / .NET", "TypeScript", "JavaScript (ES6+)", "SQL"],
   },
   {
     name: "Frameworks & Libraries",
     icon: "▦",
     skills: [
+      "Spring Framework",
+      "Spring Boot",
+      "Hibernate",
+      "Spring MVC",
       "ASP.NET Core",
       ".NET 6/8",
       "Entity Framework Core",
@@ -140,6 +187,8 @@ const skillCategories = [
       "Prometheus",
       "Grafana",
       "AWS",
+      "AWS Lambda",
+      "Linux",
     ],
   },
   {
@@ -157,6 +206,8 @@ const skillCategories = [
     name: "Databases & Caching",
     icon: "◉",
     skills: [
+      "Oracle SQL",
+      "DynamoDB",
       "SQL Server",
       "Azure SQL",
       "PostgreSQL",

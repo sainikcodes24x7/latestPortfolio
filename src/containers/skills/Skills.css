@@ -292,6 +292,9 @@
   padding: 23px 25px 25px;
   background: #181919;
 }
+.skill-category:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
 .skill-category h3 {
   display: flex;
   align-items: center;

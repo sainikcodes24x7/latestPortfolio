@@ -14,7 +14,13 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
+            <NavLink
+              target="_blank"
+              rel="noopener noreferrer"
+              to={link}
+              tag={Link}
+              className="logo"
+            >
               <span className="logo-mark">SK</span>
               <span className="logo-copy">
                 <b>{greeting.logo_name}</b>
@@ -28,6 +34,8 @@ class Header extends Component {
             <ul className="menu">
               <li>
                 <NavLink
+                  target="_blank"
+                  rel="noopener noreferrer"
                   to="/home"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
@@ -38,6 +46,8 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
+                  rel="noopener noreferrer"
                   to="/education"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
@@ -48,6 +58,8 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
+                  rel="noopener noreferrer"
                   to="/experience"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
@@ -58,6 +70,8 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
+                  target="_blank"
+                  rel="noopener noreferrer"
                   to="/projects"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
@@ -69,6 +83,8 @@ class Header extends Component {
 
               <li>
                 <NavLink
+                  target="_blank"
+                  rel="noopener noreferrer"
                   to="/contact"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}

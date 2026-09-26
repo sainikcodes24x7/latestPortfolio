@@ -100,6 +100,8 @@ class IssueCard extends Component {
               <p className="parent-repo">
                 Repository:{" "}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{ color: iconPR.style.color }}
                   href={issue["repository"]["url"]}
                 >

@@ -11,10 +11,20 @@ export default function TalkCard({ talkDetails }) {
           <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
 
           <div className="card-footer-button-div">
-            <a href={talkDetails.slides_url} target="_" class="talk-button">
+            <a
+              rel="noopener noreferrer"
+              href={talkDetails.slides_url}
+              target="_blank"
+              class="talk-button"
+            >
               Slides
             </a>
-            <a href={talkDetails.event_url} target="_" class="talk-button">
+            <a
+              rel="noopener noreferrer"
+              href={talkDetails.event_url}
+              target="_blank"
+              class="talk-button"
+            >
               Event
             </a>
           </div>

@@ -95,6 +95,32 @@
   font-size: clamp(57px, 5.35vw, 94px);
   line-height: 1;
 }
+.current-role {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  width: fit-content;
+  margin-top: 26px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 153, 0, 0.35);
+  border-left: 3px solid #ff9900;
+  border-radius: 6px;
+  background: rgba(255, 153, 0, 0.055);
+  font-size: clamp(22px, 2vw, 32px);
+}
+.current-role-title {
+  color: #f3f1ed;
+  font-family: "Google Sans Bold", sans-serif;
+}
+.current-role-at {
+  color: #b6b2ab;
+  font-size: 0.7em;
+}
+.current-role-company {
+  color: #ff9900;
+  font-family: "Google Sans Bold", sans-serif;
+}
 .system-subtitle,
 .system-description {
   color: #c9c6c1;

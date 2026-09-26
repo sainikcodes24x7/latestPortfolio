@@ -11,7 +11,7 @@ const settings = {
 const seo = {
   title: "Sainik's Portfolio",
   description:
-    "Software Engineer with 2.5+ years building scalable backend systems, REST APIs, microservices, and cloud-native applications in C#/.NET and TypeScript.",
+    "Software Engineer with 2.5+ years building scalable backend systems, REST APIs, microservices, and cloud-native applications in Java, Spring Boot, C#/.NET, and TypeScript.",
   og: {
     title: "Sainik Khaddar Portfolio",
     type: "website",
@@ -26,9 +26,8 @@ const greeting = {
   logo_name: "sainik",
   //nickname: "layman_brother",
   subTitle:
-    "Software Engineer building scalable backend systems and cloud-native applications in C#/.NET, ASP.NET Core, TypeScript, React, and React Native.",
-  resumeLink:
-    "https://drive.google.com/file/d/1XjCcD8iBRi4kBl2B3JAc_un4Fya8ziv0/view",
+    "Building backend systems with Java, Spring Boot, and AWS. Experienced in C#/.NET, TypeScript, React, and React Native.",
+  resumeLink: resumePdf,
   resumeDownloadLink: resumePdf,
   portfolio_repository: "https://github.com/sainikcodes24x7/masterPortfolio",
   githubProfile: "https://github.com/sainikcodes24x7",
@@ -91,16 +90,58 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
+      title: "AI & Modern Technologies",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ AI-assisted Development",
+        "⚡ Prompt Engineering",
+        "⚡ MCP Server",
+      ],
+      softwareSkills: [
+        {
+          skillName: "AI-assisted Development",
+          fontAwesomeClassname: "mdi:robot-outline",
+          style: {
+            color: "#ff865c",
+          },
+        },
+        {
+          skillName: "Prompt Engineering",
+          fontAwesomeClassname: "mdi:message-text-outline",
+          style: {
+            color: "#ff865c",
+          },
+        },
+        {
+          skillName: "MCP Server",
+          fontAwesomeClassname: "mdi:server-network",
+          style: {
+            color: "#ff865c",
+          },
+        },
+      ],
+    },
+    {
       title: "Cloud-Native Backend Engineering",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Designing and implementing end-to-end CI/CD pipelines with Azure DevOps YAML for zero-downtime deployments, hands-on experience on multi cloud platform (Azure/AWS),",
+        "⚡ Building and operating cloud-native services on AWS and Azure with CI/CD pipelines and production monitoring",
         "⚡ Containerizing applications with Docker and deploying scalable workloads on Azure Kubernetes Service (AKS)",
         "⚡ Automating infrastructure provisioning and management using Terraform, Ansible and Infrastructure as Code (IaC)",
         "⚡ Designing ETL pipelines  to sync configuration/reference data across environments while preserving schema integrity & audit trails",
         "⚡ Monitoring, logging, and securing deployments with Azure Monitor, App Insights, and Helm-based rollouts",
       ],
       softwareSkills: [
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "logos:aws",
+          style: { color: "#6DB33F" },
+        },
+        {
+          skillName: "AWS Lambda",
+          fontAwesomeClassname: "logos:aws-lambda",
+          style: { color: "#6DB33F" },
+        },
         {
           skillName: "Azure",
           fontAwesomeClassname: "logos-microsoft-azure",
@@ -143,13 +184,28 @@ const skills = {
       title: "Backend Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Developing scalable and secure REST APIs using C# .NET and Node.js",
+        "⚡ Developing scalable and secure REST APIs using Java, Spring Boot, Spring MVC, C# .NET, and Node.js",
         "⚡ Building cloud-native integrations with SAP, Salesforce, and Azure SQL",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
         "⚡ Designing microservices architectures and containerized APIs using Docker & Kubernetes",
         "⚡ Managing databases, queries, and performance tuning for backend services",
       ],
       softwareSkills: [
+        {
+          skillName: "Java",
+          fontAwesomeClassname: "logos:java",
+          style: { color: "#6DB33F" },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:springboot",
+          style: { color: "#6DB33F" },
+        },
+        {
+          skillName: "Spring MVC",
+          fontAwesomeClassname: "simple-icons:spring",
+          style: { color: "#6DB33F" },
+        },
         {
           skillName: "C# .NET",
           fontAwesomeClassname: "simple-icons:dotnet",
@@ -311,9 +367,9 @@ const degrees = {
   degrees: [
     {
       title: "Jadavpur University",
-      subtitle: "B.E. in Electrical Engineering",
+      subtitle: "B.E. in Electrical Engineering · CGPA 8.33/10",
       logo_path: "julogo.png",
-      alt_name: "IIITDM Kurnool",
+      alt_name: "Jadavpur University",
       duration: "2020 - 2024",
       descriptions: [
         "⚡ I have studied electrical engineering subjects like Digital Signal Processing, Signal Systems, Electrical Machines, Power System etc.",
@@ -327,7 +383,7 @@ const degrees = {
       title: "South Point High School",
       subtitle: "Science with Computer Science",
       logo_path: "sphs (2).jpeg",
-      alt_name: "Indiana University Bloomington",
+      alt_name: "South Point High School",
       duration: "2020 passout",
       descriptions: [
         "⚡ Got 95% in class 12 boards and 97% in class 10 boards CBSE",
@@ -465,131 +521,75 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Software Developer - 1",
+          company: "Amazon",
+          company_url: "https://www.amazon.com/",
+          logo_path: "amazon.svg",
+          duration: "September 2026 - Present",
+          location: "Hyderabad, Telangana",
+          description: [
+            {
+              area: "Runtime Delivery & Scale",
+              summary:
+                "Working in Amazon International Translation Services, owning runtime string-delivery solutions across Amazon.",
+              impact: [
+                ">1M TPS",
+                "p50 latency <10 ms",
+                ">99.999% availability",
+              ],
+            },
+          ],
+          color: "#FF9900",
+        },
+        {
           title: "Lead Software Engineer (Associate)",
           company: "PricewaterhouseCoopers (PwC India)",
           company_url: "https://www.pwc.in/",
           logo_path: "pwclogo.jpg",
-          duration: "May 2024 - Present",
+          duration: "May 2024 - September 2026",
           location: "Kolkata, India",
+          context:
+            "B2B and D2C FMCG E-Commerce Platforms | Pharmaceutical / CRO Client",
           description: [
             {
-              area: "B2B E-Commerce Client · Microservices Backend",
+              area: "Scalable commerce platforms",
               summary:
-                "Engineered a 13-service ASP.NET Core platform with 110+ EF Core entities, repository patterns, AutoMapper, API version gating, and centralized exception logging.",
+                "Engineered features across 25+ ASP.NET Core/.NET microservices and 110+ EF Core entities using Azure SQL, Ocelot API Gateway, JWT/RBAC, clean architecture, React/TypeScript, and Azure services; supported 3,500+ retailers and approximately 8,000 orders/day across INR 14-16 Cr combined monthly GMV, sustained 99.9% uptime and 3x festive traffic, cut feature-delivery time about 30% and MTTR about 40%, and reduced dispatch from 3-4 hours to under 5 minutes while improving warehouse throughput about 35%.",
               impact: [
-                "30% faster feature delivery",
-                "40% lower MTTR",
-                "3,500+ retailers · ₹8–10 Cr monthly GMV",
+                "25+ microservices · 110+ EF Core entities",
+                "3,500+ retailers · ~8,000 orders/day",
+                "INR 14–16 Cr monthly GMV",
+                "99.9% uptime · 3× festive traffic",
+                "~30% faster feature delivery · ~40% lower MTTR",
+                "Dispatch: 3–4 hours → under 5 minutes",
+                "~35% higher warehouse throughput",
               ],
             },
             {
-              area: "B2B E-Commerce Client · Distributor Operations",
+              area: "Growth, performance and payments",
               summary:
-                "Architected a React 18/TypeScript dispatch console using MUI DataGrid, TanStack Query, Redux Toolkit, and drag-and-drop planning across 15 warehouses and ~8,000 daily orders.",
+                "Built revenue and reliability features spanning referral/loyalty, search, payments, subscriptions, serviceability, notifications, and mobile delivery: drove 22% higher signups and INR 1.4 Cr+ incremental GMV, reduced search p95 latency from 850 ms to 310 ms and raised cache hit rate from 58% to 84%, improved payment success from 91% to 97.5% recovering about INR 10 L/month, scaled subscriptions to about 12,000 users / INR 1.8 Cr+ monthly recurring GMV, and cut undeliverable orders about 75%.",
               impact: [
-                "3–4 hours → under 5 minutes",
-                "65% fewer pick-pack errors",
-                "35% higher throughput",
+                "22% higher signups · INR 1.4 Cr+ incremental GMV",
+                "Search p95: 850 ms → 310 ms",
+                "Cache hit rate: 58% → 84%",
+                "Payment success: 91% → 97.5%",
+                "~INR 10 L/month recovered",
+                "~12,000 subscribers · INR 1.8 Cr+ monthly recurring GMV",
+                "~75% fewer undeliverable orders",
               ],
             },
             {
-              area: "B2B E-Commerce Client · Referral & Loyalty",
+              area: "Enterprise integration and cloud delivery",
               summary:
-                "Built a secure referral system across ASP.NET Identity and a .NET 8 Azure Function, with cryptographic codes, idempotent batch processing, OAuth 2.0, and Dynamics 365 synchronization.",
+                "Architected event-driven enterprise integrations with .NET 8 Azure Functions, Service Bus, Dapper, SQL concurrency controls, SAP Ariba, Icertis CLM, SAP ECC, Salesforce, Azure DevOps, Docker, and observability tooling; automated workflows for a CRO managing about INR 4,500 Cr annual procurement, reduced contract turnaround from about 7 days to under 2 hours and duplicate posting about 92%, processed 500K+ records/day at 99.9% accuracy across a flow supporting USD 120M+ annual revenue, and cut failed-sync MTTD about 60%.",
               impact: [
-                "22% more net-new signups",
-                "₹1.4 Cr+ incremental GMV",
-                "18% lower CAC · 99.6% sync rate",
-              ],
-            },
-            {
-              area: "B2B E-Commerce Client · GST Dispatch Platform",
-              summary:
-                "Unified four dispatch workflows into an idempotent, trip-scoped SO→TO and GST E-Way Bill platform with one-click E-Way Bill and Delivery Challan exports.",
-              impact: [
-                "₹4 Cr+/month movement enabled",
-                "40 hours/week saved",
-                "₹12 lakh/month inventory recovered",
-              ],
-            },
-            {
-              area: "B2B E-Commerce Client · Search Performance",
-              summary:
-                "Re-architected Azure Cognitive Search and Redis caching with versioned multi-tenant keys, barcode lookup, cache-poisoning protection, and real-time inventory enrichment.",
-              impact: [
-                "63% lower p95 latency",
-                "58% → 84% cache hit rate",
-                "9% higher conversion · ₹60–75 L/month",
-              ],
-            },
-            {
-              area: "B2B E-Commerce Client · Mobile & Delivery",
-              summary:
-                "Built a React Native/TypeScript data layer with Redux Toolkit, 112+ TanStack Query hooks, resilient JWT refresh, Branch.io deep links, and Docker-to-Azure CI/CD for mobile and backend releases.",
-              impact: [
-                "50+ managed query keys",
-                "Android 16KB compliance",
-                "Play Store & App Store delivery",
-              ],
-            },
-            {
-              area: "D2C E-Commerce Client · Distributed Platform",
-              summary:
-                "Architected 12+ .NET 6/8 services behind Ocelot API Gateway with JWT/RBAC, plus bulk CSV pipelines using EFCore.BulkExtensions and Azure Blob Storage.",
-              impact: [
-                "99.9% uptime · 3× peak traffic",
-                "50K+ rows in under 90 seconds",
-                "120 → 300+ distributors",
-              ],
-            },
-            {
-              area: "D2C E-Commerce Client · Payments & Subscriptions",
-              summary:
-                "Integrated PayU with SHA512 callbacks and an idempotent payment state machine, then delivered recurring subscriptions and geolocation-based serviceability.",
-              impact: [
-                "91% → 97.5% payment success",
-                "₹1.8 Cr+ recurring monthly GMV",
-                "75% fewer undeliverable orders",
-              ],
-            },
-            {
-              area: "D2C E-Commerce Client · Data & Notifications",
-              summary:
-                "Optimized SQL Server/EF Core across 97 repositories and built an FCM + WATI notification hub handling ~400K customer messages each month.",
-              impact: [
-                "63% faster APIs · 35% lower DB CPU",
-                "₹1.5 L/month infrastructure saved",
-                "₹25 L/month cart value recovered",
-              ],
-            },
-            {
-              area: "Pharmaceutical Client · Event-Driven Middleware",
-              summary:
-                "Architected event-driven contract-lifecycle middleware using .NET 8 Azure Functions, HTTP/Timer/Service Bus triggers, decoupled queues, at-least-once delivery, and exponential retries across SAP Ariba, Icertis, and SAP ECC.",
-              impact: [
-                "7 days → under 2 hours",
-                "40 hours/week eliminated",
-                "₹4,500 Cr procurement supported",
-              ],
-            },
-            {
-              area: "Pharmaceutical Client · Enterprise Integrations",
-              summary:
-                "Built resilient HttpClientFactory/Polly clients and an exactly-once Dapper synchronization layer across SAP, Azure SQL, and Salesforce using idempotent upserts and SQL locking.",
-              impact: [
-                "92% fewer duplicate postings",
+                "~INR 4,500 Cr annual procurement",
+                "Contract turnaround: ~7 days → under 2 hours",
+                "~92% fewer duplicate postings",
                 "500K+ records/day · 99.9% accuracy",
-                "$120M+ annual revenue supported",
-              ],
-            },
-            {
-              area: "Pharmaceutical Client · Cloud Observability",
-              summary:
-                "Owned Azure DevOps YAML delivery, ARM-provisioned infrastructure, App Insights tracing, local Azure emulation, processing state machines, and centralized audit logging.",
-              impact: [
-                "60% lower detection time",
-                "30% YoY volume growth",
-                "Zero added operational overhead",
+                "USD 120M+ annual revenue supported",
+                "~60% lower failed-sync MTTD",
               ],
             },
           ],
@@ -762,7 +762,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "sainikProfile.JPG",
     description:
-      "I am available across the links below and usually reply within 24 hours. I can help with backend engineering, C#/.NET systems, APIs, microservices, integrations, and cloud-native applications.",
+      "I am available across the links below and usually reply within 24 hours. I can help with backend engineering, Java/Spring Boot and C#/.NET systems, APIs, microservices, integrations, and cloud-native applications.",
   },
   blogSection: {
     title: "Blogs",

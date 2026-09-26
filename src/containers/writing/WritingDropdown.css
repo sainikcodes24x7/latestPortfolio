@@ -1,0 +1,111 @@
+.writing-dropdown {
+  position: absolute;
+  top: 25px;
+  right: max(110px, 7vw);
+  z-index: 90;
+  font-family: "Google Sans Regular", sans-serif;
+}
+.writing-dropdown > button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border: 1px solid #77452f;
+  border-radius: 7px;
+  color: #f3f1ed;
+  background: #20201e;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+.writing-dropdown > button > span:first-child {
+  color: #ff865c;
+}
+.writing-dropdown > button:hover {
+  border-color: #ff865c;
+}
+.writing-chevron {
+  color: #ff865c;
+  transition: transform 150ms ease;
+}
+.writing-chevron.is-open {
+  transform: rotate(180deg);
+}
+.writing-dropdown-links {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 320px;
+  max-width: calc(100vw - 40px);
+  padding: 12px;
+  border: 1px solid #594333;
+  border-radius: 10px;
+  background: #20211f;
+  box-shadow: 0 18px 48px #0008;
+}
+.writing-dropdown-links > p {
+  margin: 8px 10px 14px;
+  color: #aaa49c;
+  font: 10px/1.5 "Courier New", monospace;
+  letter-spacing: 1.5px;
+}
+.writing-dropdown-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 10px;
+  color: #eeeae4;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.writing-dropdown-links a:hover {
+  background: #32302a;
+}
+.writing-link-icon {
+  min-width: 28px;
+  color: #ff865c;
+  font-family: monospace;
+}
+.writing-dropdown-links a > span:last-child {
+  margin-left: auto;
+  color: #aa9b87;
+}
+.writing-dropdown button:focus-visible,
+.writing-dropdown a:focus-visible {
+  outline: 2px solid #ff865c;
+  outline-offset: 3px;
+}
+.writing-page {
+  min-height: 100vh;
+  background: #1c1c1b;
+}
+.writing-back {
+  display: inline-block;
+  margin: 30px 5vw 0;
+  color: #ffad85;
+  text-decoration: none;
+}
+@media (max-width: 1100px) {
+  .writing-dropdown {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px 28px 0;
+  }
+}
+@media (max-width: 640px) {
+  .writing-dropdown {
+    margin-right: 0;
+  }
+  .writing-dropdown > button {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-chevron {
+    transition: none;
+  }
+}

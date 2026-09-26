@@ -5,6 +5,17 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 
 const technologies = {
+  Amazon: [
+    "Java",
+    "Spring Boot",
+    "Spring MVC",
+    "AWS",
+    "REST APIs",
+    "Postman",
+    "SQL",
+    "Linux",
+    "CI/CD",
+  ],
   "PricewaterhouseCoopers (PwC India)": [
     "C# / .NET 8",
     "ASP.NET Core",
@@ -55,6 +66,7 @@ const technologies = {
 };
 
 const featuredCompanies = new Set([
+  "Amazon",
   "PricewaterhouseCoopers (PwC India)",
   "Bespoke Labs-AI",
   "University of California, Berkeley, Haas School of Business",
@@ -134,7 +146,7 @@ export function ExperienceTimeline() {
 
                   <div className="commit-body">
                     <h2>
-                      {role.title}
+                      {role.title}{" "}
                       <a
                         href={role.company_url}
                         target="_blank"
@@ -149,6 +161,7 @@ export function ExperienceTimeline() {
                     </div>
 
                     <div className="commit-copy">
+                      {role.context && <p>{role.context}</p>}
                       {descriptionLines(role.description).map(
                         (line, lineIndex) => (
                           <ExperiencePoint point={line} key={lineIndex} />

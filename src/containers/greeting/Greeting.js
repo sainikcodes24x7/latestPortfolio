@@ -1,8 +1,14 @@
 import React from "react";
 import "./Greeting.css";
+import WritingDropdown from "../writing/WritingDropdown";
 import { greeting } from "../../portfolio";
 
 const modules = [
+  "JAVA",
+  "SPRING BOOT",
+  "SPRING MVC",
+  "AWS",
+  "AWS LAMBDA",
   "C#",
   ".NET",
   "ASP.NET CORE",
@@ -45,6 +51,7 @@ const leetcodeProfiles = [
 export default function Greeting() {
   return (
     <section className="system-hero" id="greeting">
+      <WritingDropdown />
       <div className="ambient-code ambient-code-top" aria-hidden="true">
         &lt;System.Init /&gt;
       </div>
@@ -58,9 +65,16 @@ export default function Greeting() {
             <span>Hello, I&apos;m</span>
             <strong>{greeting.title}</strong>
           </h1>
+          <div
+            className="current-role"
+            aria-label="Current role: SDE-1 at Amazon"
+          >
+            <span className="current-role-title">SDE-1</span>
+            <span className="current-role-at">at</span>
+            <strong className="current-role-company">Amazon</strong>
+          </div>
           <p className="system-subtitle">
-            <span>&lt;Software_Engineer_(Full-Stack) /&gt;</span> Building
-            scalable systems that power real products.
+            Building scalable systems that power real products.
           </p>
           <p className="system-description">{greeting.subTitle}</p>
 

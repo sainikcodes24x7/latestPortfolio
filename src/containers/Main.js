@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Writing from "./writing/Writing";
+import { Link } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -64,6 +66,22 @@ export default class Main extends Component {
           <Route
             path="/projects"
             render={(props) => <Projects {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/writing/:categoryId"
+            render={({ match }) => (
+              <main className="writing-page">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="writing-back"
+                  to="/home"
+                >
+                  ← Back to home
+                </Link>
+                <Writing categoryId={match.params.categoryId} />
+              </main>
+            )}
           />
           <Route
             path="*"

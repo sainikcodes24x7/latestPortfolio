@@ -16,6 +16,8 @@ export default class Error extends Component {
             <h1 className="error-404">404</h1>
             <p>The requested page is unavailable at the moment!</p>
             <Link
+              target="_blank"
+              rel="noopener noreferrer"
               className="main-button"
               to="/home"
               style={{
