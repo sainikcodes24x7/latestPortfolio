@@ -1,0 +1,188 @@
+.experience-article-page {
+  min-height: 100vh;
+  background: #1c1c1b;
+  color: #c9c5be;
+  padding: 48px 24px 80px;
+}
+.experience-article {
+  max-width: 800px;
+  margin: 0 auto;
+  font: 17px/1.85 "Google Sans Regular", sans-serif;
+  overflow-wrap: anywhere;
+}
+.experience-article a {
+  color: #ffad85;
+  text-underline-offset: 5px;
+}
+.experience-article a:focus-visible {
+  outline: 2px solid #ffad85;
+  outline-offset: 5px;
+}
+.experience-back {
+  font-size: 14px;
+}
+.experience-index {
+  max-width: 1100px;
+}
+.experience-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.experience-entry-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid #403a32;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #232321, #171818);
+  text-decoration: none;
+}
+a.experience-entry-card:hover {
+  border-color: #ff865c;
+}
+.experience-entry-card h2 {
+  margin: 20px 0 12px;
+}
+.experience-entry-card p {
+  color: #c9c5be;
+}
+.experience-entry-status {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #403a32;
+  font-size: 14px;
+}
+.experience-entry-pending .experience-entry-status {
+  color: #c7b08d;
+}
+@media (max-width: 650px) {
+  .experience-entry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.experience-article section[id] {
+  scroll-margin-top: 32px;
+}
+#question-2 > h3 {
+  margin-top: 32px;
+}
+#question-2 > ul {
+  padding-left: 24px;
+}
+#question-2 > ul li {
+  margin-bottom: 12px;
+}
+.experience-article-header {
+  margin: 48px 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #403a32;
+}
+.experience-eyebrow {
+  color: #ff865c;
+  font: 12px/1.8 "Courier New", monospace;
+  letter-spacing: 1px;
+}
+.experience-article h1 {
+  color: #f3f1ed;
+  font: clamp(34px, 6vw, 58px) / 1.15 "Google Sans Bold", sans-serif;
+  letter-spacing: -0.035em;
+  margin: 20px 0;
+}
+.experience-intro {
+  font-size: 20px;
+}
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.experience-tags span {
+  border: 1px solid #3b4148;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #b4c8e0;
+  font: 12px/1.5 "Courier New", monospace;
+}
+.experience-article h2 {
+  color: #f3f1ed;
+  font: 28px/1.35 "Google Sans Bold", sans-serif;
+  margin: 40px 0 18px;
+}
+.experience-article h3 {
+  color: #f3f1ed;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+.experience-article p {
+  margin: 0 0 20px;
+}
+.experience-article code {
+  color: #f4be98;
+  background: #292724;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.experience-steps {
+  padding-left: 26px;
+}
+.experience-code {
+  padding: 24px;
+  overflow-x: auto;
+  background: #151616;
+  border: 1px solid #403a32;
+  border-radius: 8px;
+  font: 14px/1.7 "Courier New", monospace;
+  tab-size: 4;
+}
+.experience-code code {
+  padding: 0;
+  background: transparent;
+  font-size: inherit;
+}
+.experience-code:focus-visible {
+  outline: 2px solid #ffad85;
+  outline-offset: 4px;
+}
+.experience-steps li {
+  padding-left: 8px;
+  margin: 26px 0;
+}
+.experience-steps li::marker {
+  color: #ff865c;
+}
+.experience-note {
+  padding: 20px 24px;
+  border-left: 3px solid #ff865c;
+  background: #262421;
+  border-radius: 0 8px 8px 0;
+}
+.experience-connect {
+  margin-top: 48px;
+  padding: 28px;
+  background: linear-gradient(145deg, #2c2621, #232321);
+  border: 1px solid #514033;
+  border-radius: 12px;
+}
+.experience-connect h2 {
+  margin-top: 0;
+}
+.experience-connect p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .experience-article-page {
+    padding: 28px 20px 56px;
+  }
+  .experience-article {
+    font-size: 16px;
+  }
+  .experience-article h2 {
+    font-size: 24px;
+  }
+  .experience-connect {
+    padding: 22px;
+  }
+}

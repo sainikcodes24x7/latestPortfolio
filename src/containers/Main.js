@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Writing from "./writing/Writing";
+import AmazonExperience from "./writing/AmazonExperience";
+import PwcExperience from "./writing/PwcExperience";
 import { Link } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
@@ -66,6 +68,16 @@ export default class Main extends Component {
           <Route
             path="/projects"
             render={(props) => <Projects {...props} theme={this.props.theme} />}
+          />
+          <Route
+            exact
+            path="/writing/interviews/amazon-oa-interview-experience/:entry?"
+            component={AmazonExperience}
+          />
+          <Route
+            exact
+            path="/writing/interviews/pwc-oncampus-interview-experience"
+            component={PwcExperience}
           />
           <Route
             path="/writing/:categoryId"

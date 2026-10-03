@@ -51,7 +51,20 @@ const leetcodeProfiles = [
 export default function Greeting() {
   return (
     <section className="system-hero" id="greeting">
-      <WritingDropdown />
+      <div className="hero-top-actions">
+        <a
+          className="hero-book-session"
+          href="https://topmate.io/sainikkhaddar"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a 1:1 session with Sainik on Topmate (opens in a new tab)"
+        >
+          <i className="far fa-calendar-alt" aria-hidden="true" />
+          Book a 1:1
+          <span aria-hidden="true">↗</span>
+        </a>
+        <WritingDropdown />
+      </div>
       <div className="ambient-code ambient-code-top" aria-hidden="true">
         &lt;System.Init /&gt;
       </div>
