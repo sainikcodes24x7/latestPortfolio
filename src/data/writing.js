@@ -1,6 +1,25 @@
-// Add published articles here with: title, category, summary, and url.
+// Add articles here with: id, title, category, summary, and optional url.
+// Articles without a published URL are shown as coming soon.
 // Category must match one of the category IDs below.
-export const articles = [];
+export const articles = [
+  {
+    id: "amazon-oa-interview-experience",
+    title: "Amazon OA+ Interview Experience",
+    category: "interviews",
+    url: "/writing/interviews/amazon-oa-interview-experience",
+    summary:
+      "My first interview experience blog — Amazon's online assessment and interview process.",
+    topics: ["Amazon", "Online assessment", "Interview"],
+  },
+  {
+    id: "pwc-oncampus-interview-experience",
+    title: "PwC Interview Experience (On-campus)",
+    category: "interviews",
+    url: "/writing/interviews/pwc-oncampus-interview-experience",
+    summary: "Coming soon",
+    topics: ["PwC", "On-campus", "Interview"],
+  },
+];
 
 export const writingCategories = [
   {

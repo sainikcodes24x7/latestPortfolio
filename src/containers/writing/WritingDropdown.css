@@ -1,8 +1,37 @@
-.writing-dropdown {
+.hero-top-actions {
   position: absolute;
   top: 25px;
   right: max(110px, 7vw);
   z-index: 90;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.hero-book-session {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border: 1px solid #ff865c;
+  border-radius: 7px;
+  background: #ff865c;
+  color: #1c1c1b;
+  font: 15px "Google Sans Regular", sans-serif;
+  text-decoration: none;
+}
+.hero-book-session:hover {
+  background: #ffad85;
+  border-color: #ffad85;
+}
+.hero-book-session:focus-visible {
+  outline: 2px solid #ffad85;
+  outline-offset: 4px;
+}
+.writing-dropdown {
+  position: relative;
   font-family: "Google Sans Regular", sans-serif;
 }
 .writing-dropdown > button {
@@ -87,7 +116,7 @@
   text-decoration: none;
 }
 @media (max-width: 1100px) {
-  .writing-dropdown {
+  .hero-top-actions {
     position: relative;
     top: auto;
     right: auto;
@@ -97,11 +126,23 @@
   }
 }
 @media (max-width: 640px) {
-  .writing-dropdown {
+  .hero-top-actions {
     margin-right: 0;
   }
-  .writing-dropdown > button {
+  .writing-dropdown > button,
+  .hero-book-session {
     font-size: 14px;
+  }
+}
+@media (max-width: 420px) {
+  .hero-top-actions {
+    gap: 8px;
+  }
+  .hero-book-session,
+  .writing-dropdown > button {
+    padding: 12px 10px;
+    gap: 7px;
+    font-size: 13px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

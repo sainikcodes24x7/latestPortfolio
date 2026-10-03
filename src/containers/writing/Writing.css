@@ -48,6 +48,26 @@
   border-radius: 12px;
   background: linear-gradient(145deg, #232321, #171818);
 }
+.writing-card-clickable {
+  position: relative;
+}
+.writing-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+}
+.writing-card-clickable:hover,
+.writing-card-clickable:focus-within {
+  border-color: #ff865c;
+}
+.writing-card-link:focus-visible {
+  outline: none;
+}
+.writing-card-link:focus-visible::after {
+  outline: 2px solid #ffad85;
+  outline-offset: 4px;
+}
 .writing-card-top {
   display: flex;
   justify-content: space-between;
@@ -113,7 +133,8 @@
   border-top: 1px solid #393632;
   padding-top: 18px;
 }
-.writing-posts a {
+.writing-posts a,
+.writing-post-title {
   color: #ffad85;
   font-size: 17px;
   text-decoration: none;
